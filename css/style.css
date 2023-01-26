@@ -20,6 +20,10 @@ label {
   font-size: 14px;
   color: #344054;
 }
+input {
+  outline: none;
+  margin-top: 5px;
+}
 
 #name,
 #mail,
@@ -34,6 +38,9 @@ label {
 .header {
   padding: 30px 0;
 }
+h1 {
+  font-weight: 600;
+}
 #cotactus {
   color: #7f56d9;
   font-weight: 600;
@@ -42,6 +49,7 @@ label {
 
 #welove {
   color: #475467;
+  font-weight: 400;
 }
 #cotactus,
 #getin,
@@ -66,11 +74,11 @@ input {
   display: flex;
 }
 #fn {
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 #ln {
-  padding-left: 25px;
+  padding-left: 15px;
 }
 
 /* ----- EMAIL ----- */
@@ -82,15 +90,24 @@ input {
 /* ----- PHONE ----- */
 
 #phonediv {
-  border-radius: 5px;
+  margin-top: 5px;
+  border-radius: 8px;
   border: lightgrey solid 1px;
 }
+
+#phonediv:focus {
+  background-color: white;
+}
+
 #phone input {
+  margin-top: 0;
+  outline: none;
   border: none;
   display: inline;
 }
 
 select {
+  outline: none;
   width: 50px;
   border: none;
   display: inline;
@@ -100,6 +117,8 @@ select {
 
 /* ----- MESSAGE ----- */
 textarea {
+    outline: none;
+  margin-top: 5px;
   padding: 10px;
   width: 100%;
   border-radius: 5px;
@@ -111,9 +130,17 @@ textarea::placeholder {
 
 /* ----- PRIVACY POLICY _____ */
 
+
+#privacy-policy label {
+  margin-left: 5px;
+  color: #475467;
+  font-weight: 400;
+}
+
 #privacy-policy a {
   text-decoration: none;
-  color: #344054;
+  color: #475467;
+  font-weight: 400;
 }
 
 /* -----  SEND MESSAGE -----*/
